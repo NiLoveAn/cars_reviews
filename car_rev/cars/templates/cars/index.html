@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Reviews</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Reviews</h1>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="car">Car:</label>
+            <input type="text" id="car" placeholder="Enter car name">
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" placeholder="Enter your comment"></textarea>
+        </div>
+        <div class="form-group">
+            <button onclick="submitComment()">Submit Comment</button>
+        </div>
+        <div class="comments" id="comments">
+
+        </div>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
